@@ -1,9 +1,45 @@
 const button1 = document.querySelector("#button1");
 const button2 = document.querySelector("#button2");
 const nameText = document.querySelector("#nameText");
+const ad = document.getElementById("ad");
 
 button1.onclick = generateVintageName;
 button2.onclick = generateModernName;
+ad.onclick = adClick;
+
+setInterval(changeAd, 3000);
+let i = 0;
+
+function changeAd() {
+  if (i < adURLs.length - 1) {
+    i++;
+    ad.style.backgroundImage = adURLs[i];
+  } else {
+    i = 0;
+    ad.style.backgroundImage = adURLs[i];
+  }
+}
+
+function adClick() {
+  open(links[i]);
+}
+
+const links = [
+  "https://drive.google.com/drive/folders/17lKFhHvWxtPiumiQWNbbuJ8de4B6otUl",
+  "https://xbong.bigcartel.com",
+  "https://xbong.bigcartel.com",
+  "https://www.youtube.com/@xbong69",
+  "https://www.instagram.com/p/C8Dfjb8NRuo/",
+  "https://xbong.bigcartel.com",
+];
+
+const adURLs = [
+  "url(https://cdn.glitch.global/74babfc0-02b8-4fb5-8e7d-7d2d140b242c/wallpaper%20ad.jpeg?v=1719778831878)",
+  "url(https://cdn.glitch.global/74babfc0-02b8-4fb5-8e7d-7d2d140b242c/hot_girls_banner.jpeg?v=1718989092831)",
+  "url(https://cdn.glitch.global/74babfc0-02b8-4fb5-8e7d-7d2d140b242c/wii%20sports%20ad.jpeg?v=1719777029015)",
+  "url(https://cdn.glitch.global/74babfc0-02b8-4fb5-8e7d-7d2d140b242c/placeholder2.jpeg?v=1718989107405)",
+  "url(https://cdn.glitch.global/74babfc0-02b8-4fb5-8e7d-7d2d140b242c/placeholder3.jpeg?v=1718989108656)",
+];
 
 function getRandomInt(max) {
   return Math.floor(Math.random() * max);
@@ -143,4 +179,57 @@ const modern = [
   "Master Keef",
   "Tony Skunk",
   "Ganko Fett",
+  "Don Héctor Salaganja",
+  "Boofstavo Fring",
+  "Jesse Pinkstrain",
+  "Walter Weed",
+  "Mike Herbmantraut",
+  "Phineas and Herb",
+  "Spongebong Squarepants",
+  "Packrick Star",
+  "The Kushy Krab",
+  "The Keefy Krab",
+  "Mr. Dabs",
+  "Mrs. Puff",
+  "Squidherb",
+  "Dankton",
+  "David Hashelhoff",
+  "The Crumb Bucket",
+  "Bikeefy Bottom",
+  "The Hash Slinging Slasher",
+  "Danny Xantom",
+  "Timmy Burner",
+  "Cosmo and Zaza",
+  "Jimmy Newbong",
+  "Kick Budowski",
+  "iKushly",
+  "Miranda Kushgrows",
+  "Invader Zyn",
+  "Bongs Bunny",
+  "Bugged Bunny",
+  "Tazstrainian Devil",
+  "Dabby Duck",
+  "Weedy Bird",
+  "Tweedy Burn",
+  "Elmer Budd",
+  "Marzyn the Martian",
+  "AntXan",
+  "Dabpool and Wolverzyn",
+  "Toki",
+  "Captain Amerizaza",
+  "Ben 10agram",
+  "Xanomorph",
+  "Alien VS Prerolltor",
+  "Magweedo",
+  "Fryclops",
+  "Dr. Doob",
+  "Doink Dynasty",
+  "Larry Dankvid",
+  "Jerry Friedfeld",
+  "Morgan Friedman",
+  "Morgan Weedman",
+  "Harry Pothead",
+  "Leblunt James",
+  "Spider-Xan",
+  "Old Pen Kenobi",
 ];
