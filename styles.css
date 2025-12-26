@@ -2,9 +2,39 @@ body {
   background-color: black;
 }
 
+textarea,
+input.text,
+input[type="text"],
+input[type="button"],
+input[type="submit"],
+.input-checkbox {
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
+a {
+  color: grey;
+  display: inline-block;
+}
+a:hover {
+  color: green;
+}
+a:visited {
+  color: grey;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+  margin: auto 0;
+}
+
 .p {
   font-family: Arial, Helvetica, sans-serif;
   font-size: large;
+  display: inline-block;
 }
 
 .name {
@@ -17,12 +47,13 @@ body {
 }
 
 .select {
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   margin-left: 30;
   margin-right: 30;
   background-color: green;
   font-weight: bolder;
   font-size: large;
+  color: black;
 }
 
 .buttons {
@@ -35,4 +66,14 @@ body {
   color: white;
   font-size: larger;
   margin-top: 100;
+}
+
+.banner_ad {
+  max-width: 560px;
+  height: 112px;
+  background-image: url(https://cdn.glitch.global/74babfc0-02b8-4fb5-8e7d-7d2d140b242c/wallpaper%20ad.jpeg?v=1719778831878);
+  background-color: purple;
+  background-position: center;
+  background-size: 100% 100%;
+  margin: auto;
 }
